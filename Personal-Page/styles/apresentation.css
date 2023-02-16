@@ -1,0 +1,121 @@
+.apresentation{
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.apresentation__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.apresentation__content{
+    margin: 2rem 0rem 5rem 0;
+}
+
+.apresentation__image{
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+}
+
+.apresentation__content__title{
+    font-size: 1.3rem;
+    font-family: var(--fonte-principal);
+    line-height: 1.8rem;
+}
+
+.featured__title{
+    color: var(--cor-primaria);
+}
+.apresentation__content__text{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: var(--cor-texto);
+    margin-bottom: 2rem;
+}
+
+/*SOCIAL LINKS */
+.apresentation__links{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apresentation__links__subtitle{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--cor-terciaria)
+} 
+
+.apresentation__links__navegation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 3px solid var(--cor-primaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundario);
+    background-color: var(--cor-secundaria);
+}
+
+.apresentation__links__navegation:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);   
+}
+
+@media screen and (min-width: 1024px) {
+    .apresentation{
+        padding: 2rem 5em 2rem 5rem;
+    }
+    .apresentation__main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: 100%;
+      flex-direction: row; 
+    }
+    .apresentation__content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .apresentation__image {
+        width: 30rem;
+    }
+    .apresentation__content__title{
+        font-size: 1.5rem;
+    }
+    .apresentation__content__text{
+        font-size: 1.3rem;
+    }
+} 
+
+@media screen and (min-width: 1728px) {
+    .apresentation__image{
+        width: 50rem;
+    }
+    .apresentation__content__title{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .apresentation__content__text{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}  

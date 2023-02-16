@@ -1,0 +1,51 @@
+.header{
+    background: var(--roxo-degrade);
+    padding: 1rem 2rem 1rem 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.navegation > .list__menu{
+    display: flex;
+    gap: 1rem;
+}
+
+.list__menu__item{
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+.list__menu__item > .list__menu__link{
+    text-decoration: none;
+    color: var( --cor-link);
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+      padding: 1rem 5em 1rem 5rem;
+    }
+    .list__menu__item{
+        font-size: 1.3rem;
+    }
+} 
+
+@media screen and (min-width: 1728px) {
+    .header {
+      padding: 2rem 5em 2rem 5rem;
+    }
+    .list__menu__item{
+      font-size: 1.5rem;
+    }
+} 
+
+
+/* Mudar isso aqui*/
+
+
+
+  

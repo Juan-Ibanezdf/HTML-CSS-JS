@@ -1,0 +1,4 @@
+body.dark {
+    background: #000000;
+    color: var(--cor-secundaria);
+  }

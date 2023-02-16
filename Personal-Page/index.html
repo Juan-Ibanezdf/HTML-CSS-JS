@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <!-- Tags de Descrição -->
     <meta name="description" content="Uma página pessoal de apresentação feita apenas com html,css e js.">
     <meta name="keywords" content="PERSONAL PAGE , PÁGINA PESSOAL, HTML, CSS, JS ">
-    <meta name="author" content="Juan Ibanez"> 
+    <meta name="author" content="Juan Ibanez">
+    
+    <!-- Tags de responsividade -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Tituo -->
     <title>Personal Page</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Reset -->
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- Tags de estilização -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
     <!--Colocar o fivImg-->
 
 </head>
 <body>
-    <div class="container">
-        <header class="cabecalho">
-            <nav class="cabecalho__menu">
-                <a class="cabecalho__menu__link" href="index.html">Home</a>
-                <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            </nav>
-        </header>
-        <main class="apresentacao">
-            <section class="apresentacao__conteudo">
-                <h1 class="apresentacao__conteudo__titulo">Conheça mais sobre meu trabalho, onde busco elevar minhas habilidades a um outro nível <strong 
-                class="titulo-destaque">com um Front-end de qualidade!
-                </strong></h1>
-                <p class="apresentacao__conteudo__texto">Olá! Sou Ibanez, desenvolvedor
-                Front-end com especialidade em React, HTML,
-                CSS e JS. Ajudo pequenos negócios e designers a
-                colocarem em prática boas ideias. Vamos
-                conversar?</p>
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
-                    <a class="apresentacao__links__navegacao" href="https://www.instagram.com/juan_ibanezf/" target="_blank">
-                        <img src="./assets/instagram.svg" alt="Logo do Instagram.">
-                        Instagram
-                    </a>
-                    <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/juan-ibanez-df/" target="_blank">
-                        <img src="./assets/linkedin.svg" alt="Logo do Linkedin.">
-                        Linkedin
-                    </a>
-                    <a class="apresentacao__links__navegacao" href="https://github.com/Juan-Ibanezdf" target="_blank">
-                        <img src="./assets/github.svg" alt="Logo do github.">
-                        Github
-                    </a>
-                </div>
-            </section>
-            <img class="apresentacao__imagem" src="./assets/imagem-apresentacao.png" alt="Foto de apresentação, contrução de uma página web.">
-        </main>
-        <footer class="rodape">
-            <p>Desenvolvido por Juan |  &copy;2023 - Todos os direitos resevados.</p>
-        </footer>
-    </div>
+
+    <header class="header">
+        <nav class="navegation">
+            <ul class="list__menu">
+                 <li class="list__menu__item">
+                    <a class="list__menu__link" href="#about">Sobre mim</a>
+                </li>
+                <li class="list__menu__item">    
+                    <a class="list__menu__link" href="#portfolio">Portifólio</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="button__checkbox">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        
+    </header>  
+
+
+
+    <main class="apresentation">
+        <section class="apresentation__main">
+            <div class="apresentation__content">
+                        <h1 class="apresentation__content__title"> Olá 👋 ,Tudo bem?<br/>Me chamo Ibanez, Venha conhecer mais sobre meu trabalho, onde busco elevar minhas habilidades a um outro nível <strong class="featured__title">com um Front-end de qualidade!</strong>
+                        </h1>
+
+                        <p class="apresentation__content__text">Sou desenvolvedor Front-end com especialidade em React, HTML, CSS e JS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias Vamos conversar?</p>
+                
+                        <div id="social" class="apresentation__links">
+                            <h2 class="apresentation__links__subtitle featured__title">Acesse minhas redes</h2>
+                        
+                            <a class="apresentation__links__navegation" href="https://www.instagram.com/juan_ibanezf/" target="_blank"><img class="social__midia" src="./assets/instagram.png" alt="Logo do Instagram.">Instagram</a>
+
+                            <a class="apresentation__links__navegation" href="https://www.linkedin.com/in/juan-ibanez-df/" target="_blank"><img class="social__midia" src="./assets/linkedin.png" alt="Logo do Linkedin.">Linkedin</a>
+
+                            <a class="apresentation__links__navegation" href="https://github.com/Juan-Ibanezdf" target="_blank"><img class="social__midia" src="./assets/github.png" alt="Logo do github.">Github</a>
+                        </div>
+            </div>
+                
+            <div >
+                <img class="apresentation__image" src="./assets/imagem-apresentacao.png" alt="Foto de apresentação, contrução de uma página web.">
+            </div>     
+        </section>
+
+
+        <section id="about" class="about">
+                <div class="about__main">
+                    <div class="content">
+                        <h2 class="apresentation__content__title featured__title">Sobre mim
+                        </h2>
+                        <br/>
+
+                        <p class="apresentation__content__text"> Me chamo Juan Ibanez, sou formado em Sistemas de Informação pela UNDB, estou cursando no momento uma pós graduação em Engenharia de Software.
+                        Sou versando em Front-end, utilizando as seguintes tecnologias: REACT, HTML, CSS, JS, TYPESCRIPT, POSTGRESQL e PYTHON. Também sou certificado pela Google como Analista de dados junior. 
+                        </p>
+                        
+                        <p class="apresentation__content__text">
+                        Sou um profissional de TI atuante na área desde 2022, meu primeiro serviço como freelancer foi o desenvolvimento de um site para trabalhos na faculdade. O site foi desenvolvido utilizando o Visual Studio, no qual fiz uso de HTML, CSS, e Javascript. No ano de 2022, comecei em Iniciação Científica no projeto EOSOLAR na UFMA sobre monitoramento climático, onde estou desenvolvendo um sistema para visualizar os dados de todo o conjunto de equipamentos que fazem medições climáticas nesse projeto. Também fiz estágio obrigatório na Software House - UNDB, onde foi feita a elaboração do projeto de sistema de gestão de escritório, através de uma análise de requisitos funcionais e não funcionais. e também estava gerenciando um projeto que visava a criação de jogos para auxiliar no desenvolvimento de habilidades em português, matemática e ciências  para crianças do ensino fundamental, visando a inclusão de alunos que precisam de um cuidado a mais como alunos com TDAH e Autismo. E no final do ano de 2022 ocorreu minha formatura em Sistemas de Informação na UNDB. 
+                        </p>
+
+                    </div>
+
+                    <div class="about__image">
+                        <img class="about__imagem" src="/assets/eu.png" alt="Foto do Juan Ibanez">
+                    </div>
+
+            
+        </section>
+
+        <section id="portfolio" class="portfolio">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Desenvolvido por Juan |  &copy;2023 - Todos os direitos resevados.</p>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>

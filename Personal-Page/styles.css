@@ -1,0 +1,26 @@
+@import url("styles/header.css");
+@import url("styles/apresentation.css");
+@import url("styles/about.css");
+@import url("styles/button-darkmode.css");
+@import url("styles/darkmode.css");
+@import url("styles/footer.css");
+:root {
+    --cor-primaria: #4A148C;
+    --cor-secundaria: #f5f5f5;
+
+    --cor-link: #ffffff;
+    --cor-titulo: #000000;
+    --cor-texto: #000000;
+    --roxo-degrade: linear-gradient(97.54deg, #4A148C 35.49%, #326589 165.37%);
+    
+    --fonte-principal: "Poppins";
+    --fonte-secundario: "Josefin Sans";
+
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
